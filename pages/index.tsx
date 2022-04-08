@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { GetServerSidePropsContext, NextPage } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'

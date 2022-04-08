@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { GetServerSidePropsContext, NextPage } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -16,6 +17,7 @@ const Home: NextPage = ({ data, id, li }) => {
         for(var i = 0; i < data.registrations.length; i++) {
             if(data.registrations[i].id == localStorage.getItem('id')) {
                 setRegister(true);
+                break;
             }
             else {
                 setRegister(false);
